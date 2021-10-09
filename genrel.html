@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head><title>Accounting Settings</title>
+<link href="style22.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+    function Toggle(value){
+        switch(value){
+            case 'General':
+            document.getElementById('General').style.display="block";
+            document.getElementById('Password').style.display="none";
+            document.getElementById('Info').style.display="none";
+            document.getElementById('Notification').style.display="none";
+            break;
+            case 'Password':
+            document.getElementById('General').style.display="none";
+            document.getElementById('Password').style.display=" block";
+            document.getElementById('Info').style.display="none";
+            document.getElementById('Notification').style.display="none";
+
+            break;
+            case 'Info':
+            document.getElementById('General').style.display="none";
+            document.getElementById('Password').style.display="none";
+            document.getElementById('Info').style.display="block";
+            document.getElementById('Notification').style.display="none";
+            break;
+            case 'Notification':
+            document.getElementById('General').style.display="none";
+            document.getElementById('Password').style.display="none";
+            document.getElementById('Info').style.display="none";
+            document.getElementById('Notification').style.display="block";
+            break;
+        }
+    }
+    </script>
+
+
+</head>
+<body class="general">
+    <p style="font-weight: bold; font-size: 25px; margin: 20px 40px;">Accounting Settings</p>
+<div class="maindiv">
+    <div style="float:left;margin-top: 30px; ">
+<div class="box1" onclick="Toggle('General')"  ><span>General</span></div>
+<div class="box1" onclick="Toggle('Password')" ><span>Change Password</span></div>
+<div class="box1" onclick="Toggle('Info')"><span>Info</span></div>
+<div class="box1" onclick="Toggle('Notification')" ><span>Notifications</span></div>
+    </div>
+    <div style="float:left" id="General" >
+<div style="float:left; margin: 20px;"><img src="avatar (1).png" style="margin: 10px; height: 70px; width: 90px; "/> </div>
+
+<div style="float:left" >
+    
+    <div style="float:left; margin-top: 40px;" ><button class="uploadbutton" >Upload new photo</button> </div>
+<div style="float:left; margin-top: 40px; margin-left:10px;"><button class="resetbutton">Reset</button></div>
+    <div style="clear: left; overflow: hidden ;"><p style="margin-top: 10px;">Allowed JPG GIF or PNG. Max size of 800k</p></div>
+</div>
+
+<div style="clear: left; margin: 20px;">
+<span>Username</span>
+<div>
+    <input type="text" class="text"/>
+</div>
+</div>
+<div style="clear: left; margin: 20px;">
+    <span>Name</span>
+    <div>
+        <input type="text" class="text" /> 
+    </div>
+    </div>
+    <div style="clear: left; margin: 20px;">
+        <span>Email</span>
+        <div>
+            <input type="text" class="text" />
+        </div>
+        </div>
+            <div class="div22">
+                <span>your email is not confirmed . please check your inbox</span>         
+                <a href="https://mail.google.com"> resend confirmation</a>
+                </div>
+                <div  style="clear:left ;margin: 20px" >
+                    <div>  <span>Company</span> <div> <input class="text" type="text"/> </div></div>
+                
+                
+                </div>
+
+
+
+        <div style="padding-left:600px; ">
+            <div   style="float:left;" ><button class="savebutton" >Save Changes</button> </div>
+            <div><button class="cancelbutton"><span>Cancel</span></button></div>
+        </div>
+    </div>
+    <div style="float:left;display: none;" id="Password" >
+        <div style=" margin-top: 40px;">
+                    <div > <div  style="margin: 20px"> <span>current password</span>    <div> <input class="text"  type="password"/>   </div></div></div>
+            <div ><div style="margin: 20px"> <span>new password</span>    <div> <input    class="text"  type="password" />   </div></div></div>
+            <div   ><div style="margin: 20px"><span> repeat new password</span>    <div> <input   class="text" type="password"  />   </div> </div></div>
+            
+         </div>
+            <div style="clear:left  ;margin: 20px;padding-left:600px;">
+                <div style="float:left";> <button class="savebutton"> save change </button>   </div>
+                <div style="float:left";> <button  class="cancelbutton" > cancel</button>   </div>
+                </div>
+    </div>
+    <div style="float:left;display: none;    margin-left: 40px;" id="Info">
+        <div style="margin-top: 40px;">
+    
+     <div   style="margin: 20px"> <span>Bio</span>   <div>  <input class="text" type="text"/>  </div> </div>
+                 
+               <div  style="margin: 20px"  >  <span>Birthday</span>   <div>   <input class="text" type="date"/>   </div></div></div>
+               <div style="margin: 20px">  <div><span>contry</span>  <div>  <select class="text">
+      <option> usa</option>
+      
+      
+      
+                  </select>  </div></div></div>
+          
+        
+         
+         <div >
+         <div class="text2"> <span> contacts</span> </div>
+         <div ><div style="margin: 20px"> <span>phone</span>    <div> <input class="text" type="text"/>   </div></div></div>
+         <div ><div style="margin: 20px"><span>website</span>    <div> <input  class="text" type="text"/>   </div></div></div>
+         </div>
+         <div style="clear:left  ;margin: 20px;padding-left:600px;">
+            <div style="float:left";> <button class="savebutton"> save change </button>   </div>
+            <div style="float:left";> <button  class="cancelbutton" > cancel</button>   </div>
+            </div>
+    </div>
+
+
+    <div style="float:left;display: none;    margin-left: 40px;" id="Notification" >
+        <div style=" margin-top: 40px;" >
+            <div style="margin: 20px"> <span class="text2">Activity</span></div>
+             <div><input type="checkbox" id="Activity1" name="Activity1" value="Activity1">
+             <label for="Activity1"> email me when someone comments on my article </label><br></div>
+            <div> <input type="checkbox" id="Activity2" name="Activity2" value="email">
+             <label for="vehicle2">email me when someone answers on my forum </label><br></div>
+             <div><input type="checkbox" id="Activity3" name="Activity3" value="email2">
+             <label for="Activity3"> email me when someone follows me</label><br></div>
+         </div>
+         
+         <div>
+         
+             <div style="margin: 20px"> <span class="text2">Application</span></div>
+             <input type="checkbox" id="Application1" name="Application1" value="1">
+             <label for="Activity1"> news and announcements</label><br>
+             <input type="checkbox" id="Application2" name="Application2" value="2">
+             <label for="vehicle2">weekly product updates </label><br>
+             <input type="checkbox" id="Application3" name="Application3" value="3">
+             <label for="Activity3"> Weekly blog digest</label><br>
+         
+         
+         
+         
+             </div>
+           
+
+
+        <div style="clear:left  ;margin: 20px;padding-left:600px;">
+            <div style="float:left";> <button class="savebutton"> save change </button>   </div>
+        
+    </div>
+
+    
+</div>
+    
+
+</body>
+
+</html>

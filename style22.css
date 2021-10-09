@@ -1,0 +1,104 @@
+.maindiv{
+    background-color:white;
+    border: 1px solid;
+    margin: 20px 40px;
+    height: 1000px;
+}
+.general{
+    background-color:#EEEE;
+    Border-bottom:#E6ECF3;
+    
+}
+.box1
+{
+    border: .5px solid;
+    height: 50px;
+    width: 200px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+}
+
+.uploadbutton{
+    border: 1px solid transparent;
+    color: #ffffff;
+    border-radius: 4px;
+    background-color: #428bca;
+    border-color: #357ebd;
+    height: 30px;
+    width: 150px;
+}
+
+.resetbutton{
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    height: 30px;
+}
+
+.cancelbutton
+{ color: #333333;
+    background-color: #ffffff;
+    border-color: #cccccc;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.savebutton
+{margin-top: 10px;
+    height: 40px;
+    border-radius: 10px;
+    
+    
+}
+
+
+    .box1:hover{
+        background-color: gray
+    }
+
+
+    input[type=text]:focus
+    {
+        
+        Border-color:#66afe9;
+        outline: 0;
+    }
+    input[type=password]:focus
+    {
+        
+        Border-color:#66afe9;
+        outline: 0;
+    }
+
+    .savebutton:hover{
+        background-color: #3276b1;
+        border-color: #285e8e;
+    
+    }
+
+
+    .text{width:800px; height:30px;border: 1px solid #cccccc;color: #555555;}
+    .divs{clear: left;
+        margin-left: 300px;}
+
+
+
+.text2{
+
+    font-size: 30px;
+    font-style: oblique;
+}
+.div22{width: 760px;
+    border: 1px solid #E6ECF3;
+    border-radius: 4px;
+    color: #555555;
+    margin: 20px;
+    height: 100px;
+    padding-top: 20px;
+    padding-left: 40px;}
